@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textBankApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bank App"
+        android:textSize="50dp"
+        android:fontFamily="@font/inter_medium"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textBankApp">
+
+        <Button
+            android:id="@+id/posicion_global"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/posicion_global"
+            android:layout_marginBottom="10dp"
+            android:textSize="27dp" />
+
+        <Button
+            android:id="@+id/movimientos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/movimientos"
+            android:layout_marginBottom="10dp"
+            android:textSize="27dp" />
+
+        <Button
+            android:id="@+id/transferencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/transferencias"
+            android:textSize="27dp" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

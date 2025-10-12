@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppBanco</string>
+    <string name="welcome_bank">Bienvenido al Banco</string>
+    <string name="login">Login</string>
+    <string name="entrar">Entrar</string>
+    <string name="iniciar">Iniciar Sesion</string>
+    <string name="exit">Salir</string>
+    <string name="user_label">Usuario</string>
+    <string name="password_label">Contraseña</string>
+    <string name="required">Required</string>
+    <string name="posicion_global">Posicion Global"</string>
+    <string name="movimientos">Movimientos"</string>
+    <string name="transferencias">Transferencias</string>
+</resources>
