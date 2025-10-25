@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppBanco">
         <activity
-            android:name=".InicioSesionAtivity"
+            android:name=".BienvenidaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,10 @@
 
         <activity android:name=".MainActivity"></activity>
 
-        <activity android:name=".BienvenidaActivity"></activity>
+        <activity android:name=".InicioSesionAtivity"></activity>
+
+        <activity android:name=".CambiarClaveActivity"></activity>
+
 
         <meta-data
             android:name="preloaded_fonts"

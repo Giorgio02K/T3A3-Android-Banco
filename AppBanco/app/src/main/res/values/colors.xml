@@ -1,5 +1,8 @@
 <resources>
     <color name="text_color_black">#000000</color>
+    <color name="gray">#777777</color>
+    <color name="black">#212121</color>
+    <color name="white">#FFFFFF</color>
     <color name="text_color_white">#FFFFFF</color>
     <color name="md_theme_primary">#8C4A60</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>

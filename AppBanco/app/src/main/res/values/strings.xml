@@ -11,4 +11,8 @@
     <string name="posicion_global">Posicion Global"</string>
     <string name="movimientos">Movimientos"</string>
     <string name="transferencias">Transferencias</string>
+    <string name="cambiar_contrasena">Cambiar Contraseña</string>
+    <string name="promociones">Promociones</string>
+    <string name="cajeros">Cajeros</string>
+    <string name="text_welcome_activity">Tu banca digital, más cerca de ti</string>
 </resources>

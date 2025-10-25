@@ -19,23 +19,25 @@ class InicioSesionAtivity : AppCompatActivity() {
         binding = InicioSesionActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val loginButton = findViewById<Button>(R.id.login_button)
-        val usuario = findViewById<TextInputLayout>(R.id.user_login)
-        val password = findViewById<TextInputLayout>(R.id.password_login)
-        val salir = findViewById<Button>(R.id.salir_button)
-        salir.setOnClickListener {
+        binding.salirButton.setOnClickListener {
             finish()
         }
-        loginButton.setOnClickListener {
-            val userText = usuario.editText?.text.toString()
-            val passwordText = password.editText?.text.toString()
-            if (userText == "admin" && passwordText == "admin") {
-                val intent = Intent(this, BienvenidaActivity::class.java)
-                intent.putExtra("usuario", userText)
-                startActivity(intent)
 
+        binding.loginButton.setOnClickListener {
+            val userText = binding.userLogin.editText?.text.toString()
+            val passwordText = binding.passwordLogin.editText?.text.toString()
+            if (userText == "" || passwordText == "") {
+                Toast.makeText(this, "Por favor, llene todos los campos", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+                if (userText == "admin" && passwordText == "admin") {
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.putExtra("usuario", userText)
+                    startActivity(intent)
+
+                } else {
+                    Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT)
+                        .show()
+                }
             }
         }
 

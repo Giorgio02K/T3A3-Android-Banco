@@ -9,6 +9,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.jordichorro.appbanco.databinding.BienvenidaActivityBinding
 
+
 class BienvenidaActivity : AppCompatActivity() {
     private lateinit var binding : BienvenidaActivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,14 +18,12 @@ class BienvenidaActivity : AppCompatActivity() {
         binding = BienvenidaActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val usuario = intent.getStringExtra("usuario")
-        binding.bienvenidoUsuario.text = "Bienvenido, $usuario"
+        binding.buttonInicioWelcome.setOnClickListener {
+            val intent = Intent(this, InicioSesionAtivity::class.java)
+            startActivity(intent)
+            true
+        }
 
-        //val loginButton = findViewById<Button>(R.id.enter_button)
-        //loginButton.setOnClickListener {
-        //    val intent = Intent(this, MainActivity::class.java)
-        //    startActivity(intent)
-        //}
     }
 
 }
