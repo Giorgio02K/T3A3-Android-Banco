@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Bank</string>
+    <string name="welcome_bank">Welcome, admin</string>
+    <string name="posicion_global">Account Overview</string>
+    <string name="cambiar_contrasena">Change Password</string>
+    <string name="movimientos">Transactions</string>
+    <string name="promociones">Promotions</string>
+    <string name="transferencias">Transfers</string>
+    <string name="cajeros">ATMs</string>
+    <string name="exit">Exit</string>
+    <string name="login">Login</string>
+    <string name="entrar">Enter</string>
+    <string name="iniciar">Login</string>
+    <string name="user_label">User</string>
+    <string name="password_label">Password</string>
+    <string name="required">Required</string>
+    <string name="text_welcome_activity">Your digital bank, more near you</string>
+</resources>
